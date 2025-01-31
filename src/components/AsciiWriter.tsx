@@ -85,7 +85,7 @@ __      ___ __ _| |_ ___
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          className="w-[1494px] ml-1 h-128 bg-neutral-900 px-4 py-2 focus:outline-none resize-none 
+          className="w-full ml-1 h-96 bg-neutral-900 px-4 py-2 focus:outline-none resize-none 
                      border-2 border-orange-200 text-orange-200"
           style={{ fontFamily: "VT323, monospace", fontSize: "1.2rem" }}
           placeholder="enter your thoughts..."
