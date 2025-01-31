@@ -64,7 +64,7 @@ ${text}
         style={{ fontFamily: "VT323, monospace", fontSize: "1.2rem" }}
       >
         <div className=" flex justify-between">
-          <pre className="mb-6">{generateHeader()}</pre>
+          <pre className="">{generateHeader()}</pre>
           <pre>
             {`
 ┌──────────── progress ────────────┐
@@ -74,19 +74,23 @@ ${text}
         </div>
 
         {/* Writing Area */}
-        <pre className="mb-1">
-          {`
-┌─────────── write ──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐`}
+        <pre className="mb-2">
+          {`               _ _       
+              (_) |      
+__      ___ __ _| |_ ___ 
+\\ \\ /\\ / / '__| | __/ _ \\
+ \\ V  V /| |  | | ||  __/
+  \\_/\\_/ |_|  |_|\\__\\___|`}
         </pre>
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
           className="w-[1494px] ml-1 h-128 bg-neutral-900 px-4 py-2 focus:outline-none resize-none 
-                     border-l-2 border-r-2 border-orange-200 text-orange-200"
+                     border-2 border-orange-200 text-orange-200"
           style={{ fontFamily: "VT323, monospace", fontSize: "1.2rem" }}
           placeholder="enter your thoughts..."
         />
-        <pre>{`└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘`}</pre>
+        {/* <pre>{`────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────`}</pre> */}
 
         {/* Export Button */}
         <pre
