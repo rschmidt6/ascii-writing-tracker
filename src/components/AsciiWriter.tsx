@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 
 const AsciiWriter = () => {
   const [text, setText] = useState("");
-  const [tags, setTags] = useState<string[]>([]);
-  const [newTag, setNewTag] = useState("");
   const [wordCount, setWordCount] = useState(0);
   const dailyGoal = 500;
 
